@@ -184,7 +184,7 @@ p {
   hyphens: auto;
 }
 
-img, video {
+video {
   display: block;
   width: 100%;
   object-fit: contain;
@@ -193,6 +193,7 @@ img, video {
 img {
   font-style: italic;
   color: var(--text-color-alt);
+  height: 300px;
 }
 
 details {

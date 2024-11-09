@@ -1,8 +1,8 @@
 ---
-title: The Monospace Web
-subtitle: A minimalist design exploration
-author: Oskar Wickström
-author-url: "https://wickstrom.tech"
+title: The Orchid Manor 
+subtitle: A Digital Orchard
+author: Arcnemesys
+author-url: "https://arcnemesys.me"
 date: 2024-08-26
 lang: en
 toc-title: Contents
