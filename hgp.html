@@ -26,7 +26,7 @@
 			style: "ios"
 		});
 		</script>
-<h2>Holy Grail Projects</h2>
+<h1>Holy Grail Projects</h1>
 <p>
  While talking to my younger brother, he said off-handedly that he knew I'd been thinking deeply about an idea, that for me, would be my life's work, but he referred to it as my <strong>Holy Grail Project</strong>, and that phrase so accurately captures how much the project means to me, that it has become a meta-<i>North Star</i>, if you will.</p>
 		<p>
@@ -61,4 +61,143 @@
 <p>There's no way to know if that will be so, unless your successful Holy Grail Project is conquering death itself, in which case this condition no longer matters because no one will die, or at least, no one will remain dead. Though on the other hand, it still counts because that would certainly be something that would be valued long after what was once the normative lifespan.</p>
 		<p>Also, it doesn't have to be at the scale of making civilization space-faring, it could be something commonplace, such as raising children, which, while commonplace, is nonetheless a priceless, noble, and inestimably meaningful endeavor to undertake.</p>
 
-<p>For me, my Holy Grail Project is <strong>ArtRiver</strong>.</p>
+<p>Below, you'll find a short overview of my Holy Grail Project, <strong>ArtRiver</strong>.</p>
+
+<nav id="TOC" role="doc-toc">
+<h1 id="toc-title">ArtRiver: The Artistic Revision Tracker and Retriever Protocol</h1>
+<ul class="incremental">
+<li><a href="#purpose" >Purpose: What ArtRiver will bring to creatives.</a></li>
+<br />
+<li><a href="#overview" >Overview: ArtRiver from bird's-eye view.</a></li>
+				<br />
+<li><a href="#concepts" >Concepts: The concepts that underlie an ArtRiver.</a></li>
+				<br />
+<li><a href="#tables">Cratemap: A look intro the the future of ArtRiver</a></li>
+</ul>
+</nav>
+<h1 id="purpose">Purpose</h1>
+        <article class="region prose wrapper hero">
+            <h2>The Dilemma of Audio: Many Versions, No Control</h2>
+                <p>
+                    Version control is not at all a new concept for iterative endeavors, having been used in industrial manufacturing and design, before it was ported to the domain of programming.
+                </p>
+                <p>However, given the meteoric rise of complex software, it has become genericized, with the star player being git. In less than a century from the genesis of the field, programming has effectively solved the issue of version control.
+                </p>
+                <p>
+                Now, it is time for the creative domain to evolve, and adopt version control, as a integral part of its existence.
+
+                A quick look around the internet will make it clear that the creative domain, has not progressed beyond First-generation version control, simply saving file names with appended and incremented series of numbers, and sharing work by emailing files.
+                </p>
+                <p>
+                    While that may work for individual local projects, it's inefficient, unwieldy, and makes collaboration painful, providing no way to way to synchronize changes, and combine work done on various parts of creative projects.
+                    It offers no utility in the way back-ups, leading to a common problem in, for example, the music industry, where files are lost forever.
+                </p>
+                <p>
+                    In 2008, a fire at Universal Studios Hollywood destroyed roughly one to two hundred thousand master recordings, belonging to iconic artists and bands like <strong>Elton John</strong>, <strong>Nirvana</strong>, <strong>Janet Jackson</strong>, <strong>Niel Diamond</strong>, <strong>Aerosmith</strong>, <strong>Aretha Franklin</strong>, <strong>Ray Charles</strong>, <strong>Lynyrd Skynyrd</strong> and <strong>Slayer</strong>.
+                </p>
+                <p>Lucian Grainge, the CEO of Universal Music Group said in response to the event that "...<em>the loss of even a single piece of archived material is heartbreaking</em>."</p>
+                <p>He's correct.</p>
+                <p>ArtRiver exists to make it so that none of these problems afflict the creative process any longer. No one, from the humble hobbyists, to the greatest artists of our time, and times gone by, should lose entire pieces of artwork, due to freak accidents, and human error.</p>
+                <p>In an era where the creation of art is highly technological, and iconic art from the analog era becomes digitized, version control, which is so pivotal in creating the tools for making and translating art to a new medium, has a powerful and necessary role to play.</p>
+        </article>
+<h1 id="overview">Overview</h1>
+<h2>May We All Meander More</h2>
+<article class="region prose wrapper hero">
+      <p>
+        ArtRiver is a distributed version control system for musicians, that will allow artists to track and navigate the
+        various branches and possibilities a creative work went through, on the
+        way to completion.
+      </p>
+
+      <p>
+        Artriver exists to allow artists to draw from a granular record of the
+        various tweaks and changes they make to various pieces of art, by
+        coalescing these creative excursions in various directions into a
+        navigable digital construct.
+      </p>
+
+      <p> Artists can avoid the worry of accidental deletions, not just of whole
+      works, but of parts of versions of works, and the like. From another
+      perspective, it offers a new methodology to hone their craft, pin-pointing
+      the mixing or synthesizer settings that didn't resonate, blossom fully,
+      or highlight those that put the art on the path to becoming a finished product. </p> 
+      
+      <p> The creative process, rather than culminating in this point, can in fact
+      have a life beyond it.</p>
+      
+    </article>
+<h1 id="constructs">Concepts</h1>
+ <article class="region prose wrapper hero">
+      <h2>What Makes ArtRiver Run</h2>
+      <ul>
+
+
+        <section>
+
+          <h3>The ArtRiver.</h3>
+          <p>
+            Every creative project is an ArtRiver, which will exist locally.
+          </p>
+        </section>
+        <section>
+
+          <h3>The Timeshore.</h3>
+          <p>
+            For each ArtRiver project, there is an associated Timeshore, a metadata focused data structure
+            that will chronicle major and minor changes, and save points, throughout
+            the lifetime of an ArtRiver.
+          </p>
+        </section>
+        <section>
+
+          <h3>The Glacier.</h3>
+          <p>
+            Once a change to an ArtRiver project is finalized, it will be preserved in the Glacier, a data construct which mirrors
+            an ArtRiver, and applies changes from the Timeshore. It is analagous to a remote, and allows for collaboration and
+            synchronization/distribution of changes to ArtRiver project.
+          </p>
+        </section>
+        <section>
+
+          <h3>The Iceberg.</h3>
+          <p>
+            Once a change has been preserved in a Glacier, it will be stored in the Iceberg, a compressed replica of the project and it's history.
+            It is a last resort redunancy solution, for extreme situations where remotes become corrupted or destroyed, and provides a preservation mechanism
+			for master recordings of the great works of media, as they become digitized, remastered, etc.
+          </p>
+        </section>
+      </ul>
+    </article>
+<h1 id="cratemap">Cratemap</h1>
+		 <article class="region prose wrapper hero">
+			<h2>What Lies Downstream</h2>
+            <ul>
+                
+                <li class="flow">
+                    <section>Plugin Engine:
+                            Flexible and robust functionality for hooking to the DAW, scanning for plugins of various types, and recording settings and preferences.
+                    </section>
+
+                </li>
+				<br />
+                <li class="flow">
+                    <section>Metadata Engine:
+                            Metadata utilities for files, projects, and collaborators to bolster versioning functionality,
+                            access permissions, and state synchronization.</section>
+                    
+
+                </li>
+				<br />
+                <li class="flow">
+                    <section>Access Control Engine:
+
+                            Provision permissions for internal and external collaborators, according to role and area of expertise, or projects, and the files that comprise them.</section>
+
+                </li>
+				<br />
+                <li class="flow">
+                    <section>Automation Engine: Tooling that will allow automating mixing and editing preferences, integrating them into into the workflow of project management, and applying effects on the fly.</section>
+
+                </li>
+            </ul>
+        </article>
