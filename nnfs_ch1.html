@@ -1,0 +1,113 @@
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@theorchidmanor">
+<meta name="twitter:creator" content="@theorchidmanor">
+<meta name="twitter:title" content="Notes">
+<meta name="twitter:description" content="Wherein ideas bloom, knowledge flourishes, and the unknown dissipates">
+<meta name="twitter:image" content="https://arcnemesys.github.io/the-manor/assets/monograil.png">
+
+  <meta name="author" content="Orchid M." />
+  <meta name="dcterms.date" content="2024-08-26" />
+  <title>The Orchid Manor</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="index.css" />
+<script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+</body>
+</head>
+<body>
+<img src="assets/monochromeorchids.jpg" />
+      <h1>Neural Nets From Scratch</h1>
+      <span class="subtitle">Wherein ideas bloom, knowledge flourishes, and the unknown dissipates.</span>
+<div id="siri-container"></div>
+		<script>
+		var siriWave = new SiriWave({
+			container: document.getElementById("siri-container"),
+			width: 729,
+			height: 100,
+			speed: 0.06,
+		});
+		</script>
+<h2>TOC</h2>
+<h1>Introducing Neural Networks</h1>
+
+<p>Neural networks are a kind of machine learning often conflated with deep learning: the distinction is that deep neural nets have two or more hidden layers.</p>
+
+<p>Since their development, computers have been aimed at taking input and generating output for classification, and regression, and in general supervised and unsupervised learning.</p>
+
+<p>Supervised learning is when you have pre-established/labeled data:</p>
+
+<p>Imagine you have sensor data for servers with upload/download rates, temperature, humidity, etc, taken every ten minutes. Normally servers run fine, but sometimes parts fail, causing outages. We can collect data and divide it into classes for when the server is working (normal class), and for when it's in an outage (failure class).</p>
+
+<p>What each sensor manages is called a feature.</p>
+<ul>
+
+	</ul>
+<p>A group of features is a feature-set, often represented as a vector.</p>
+
+<p>The values of a feature set are a sample.</p>
+
+<p>Samples are fed to neural nets to train them to fit desired outputs from the samples, or to make predictions during inference.</p>
+
+<p>The normal/failure classes are classifications or labels: the goal is to predict when a failure is imminent.</p>
+
+<p>In addition to classification there's regression, which predicts numerical values.</p>
+
+<p>Unsupervised learning identifies structure in data without knowledge of labels.</p>
+
+<p>NN's have been around since the 40's, but couldn't be trained until the 60's, when backpropagation was invented.</p>
+
+<h2>What is a Neural Network?</h2>
+
+<p>NN's are inspired by the brain, and while different, are highly similar, and when large numbers of neurons are combined, they tend to out perform other ML methods.</p>
+
+<p>Dense layers of NN's are the most common, and within them, each neuron of a layer, is connected to every neuron of the next layer, so that its output becomes input. Each connection has a weight, a trainable factor, of how much of the input to use, which is multiplied by the input value.</p>
+
+<p>The product of inputs and weights are fed to a neuron, summed, and then a bias is added, which offsets the output positively or negatively to map dynamic data.</p>
+
+<p>Weights and biases are like knobs that can be tuned to fit models to data: NN's often have millions of these parameters tuned during training, and they affect neurons different.</p>
+
+<p>We can actually graph neuron output, by way of mapping it onto $y = mx + b$, or $output = weight(input) * bias$, where changing the weight alters the function slope, and the value of the bias shift the overall function upward or downward.</p>
+
+<p>We apply an activation function to the output, such as the Rectified Linear(ReLU), to the output.</p>
+
+<p>Imagine a neural net with two hidden layers as well as an input and output layer.</p>
+
+<p>The input layer takes data that is preprocessed via normalization and scaling (after being made numeric within the range 0..1 or -1..1), and the output layer is what the net returns. With classification the output layer typically has as many neurons as the data has classes.</p>
+
+<p>Neural nets have millions of parameters (weight & bias pairs), and act as a function of millions of variables, for which their is an arrangement that produces correct results: finding this combination is the tricky part.</p>
+
+<p>The end goal is to adjust parameters so that unseen examples trigger the desired output, and in pursuit of this one must avoid overfitting, where the net memorizes the data and doesn't perform well with new examples.</p>
+
+<p>In-sample data is used to train the data, and out-of-sample data validates the algorithm, for example 90k of 100k samples may be used for training, and the remaining 10k may be used for validation.</p>
+
+<p>When the algorithm performs correctly with out-of-sample data, it's referred to as generalization, which is a result of training (gradual parameter adjustment over time).</p>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+</body>
+</body>
+
